@@ -5,6 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import slider1 from "../../icons/world-map.jpg";
 import slider2 from "../../icons/flags.jpg";
 import slider4 from "../../icons/image-2.jpg";
+import Linkdn from "../../icons/linkedin.png";
+import FbLogo from "../../icons/facebook.svg";
+import GoogleLogo from "../../icons/google.svg";
+import TwitterLogo from "../../icons/twitter.svg";
 import Logo from "../../icons/icons.JPG";
 
 const Home = () => {
@@ -187,9 +191,32 @@ const Home = () => {
 
       {/* Footer */}
       <footer className="text-center mt-4">
-        <div className="text-center mt-3">
-          <img src={Logo} alt="Logo" style={{ cursor: "pointer" }} />
-        </div>
+        <div className="text-center mt-3" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div id="social-icons" >
+                      <img 
+                      src={GoogleLogo}
+                      style={{ width: "25px", height: "40px" }}
+                      />
+                    </div>
+                    <div id="social-icons">
+                      <img 
+                      src={FbLogo}
+                      style={{ width: "25px", height: "19px" }}
+                      />
+                    </div>
+                    <div id="social-icons">
+                      <img 
+                      src={Linkdn}
+                      style={{ width: "15px", height: "16px" }}
+                      />
+                    </div>
+                    <div id="social-icons">
+                      <img 
+                      src={TwitterLogo}
+                      style={{ width: "25px", height: "40px" }}
+                      />
+                    </div>
+                  </div>
         <p>Example@email.com</p>
         <p>Copyright &copy; 2020 Name. All rights reserved.</p>
       </footer>

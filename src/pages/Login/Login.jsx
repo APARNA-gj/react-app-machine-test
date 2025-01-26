@@ -3,7 +3,11 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import { Form, Button, Alert } from "react-bootstrap";
 import GirlImage from "../../icons/image.png";
-import Logo from "../../icons/icons.JPG";
+import Linkdn from "../../icons/linkedin.png";
+import FbLogo from "../../icons/facebook.svg";
+import GoogleLogo from "../../icons/google.svg";
+import TwitterLogo from "../../icons/twitter.svg";
+
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -79,12 +83,31 @@ const Login = () => {
           </Form.Group>
           <Button type="submit">Sign In</Button>
           <p className="footer">__________ Or Sign In with __________</p>
-          <div className="text-center">
-            <img
-              src={Logo}
-              alt="Logo"
-              style={{ cursor: "pointer", width: "90%" }}
-            />
+          <div className="text-center" style={{ display: "flex"}}>
+            <div id="social-icons" >
+              <img 
+              src={GoogleLogo}
+              style={{ width: "25px", height: "40px" }}
+              />
+            </div>
+            <div id="social-icons">
+              <img 
+              src={FbLogo}
+              style={{ width: "25px", height: "19px" }}
+              />
+            </div>
+            <div id="social-icons">
+              <img 
+              src={Linkdn}
+              style={{ width: "15px", height: "16px" }}
+              />
+            </div>
+            <div id="social-icons">
+              <img 
+              src={TwitterLogo}
+              style={{ width: "25px", height: "40px" }}
+              />
+            </div>
           </div>
         </Form>
       </div>

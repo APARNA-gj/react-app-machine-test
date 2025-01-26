@@ -65,4 +65,15 @@
     
   }
 
+  #social-icons{
+    border: 1px solid black !important;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    margin: 0.5rem;
+  }
+
   
